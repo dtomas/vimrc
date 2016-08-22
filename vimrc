@@ -71,6 +71,8 @@ let g:syntastic_python_pylint_args = ['--load-plugins', 'pylint_django']
 
 let g:jedi#show_call_signatures = 3
 
+set exrc
+
 " For Python3 projects
-let g:syntastic_python_python_exec = 'python3'
-let g:jedi#force_py_version = 3
+"let g:syntastic_python_python_exec = 'python3'
+"let g:jedi#force_py_version = 3
