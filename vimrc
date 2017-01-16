@@ -7,6 +7,9 @@ call pathogen#helptags()
 set nocompatible
 filetype plugin indent on
 
+highlight RedundantWhitespace ctermbg=red guibg=red
+match RedundantWhitespace /\s\+$\|\t/
+
 noremap <silent> <F10> :NERDTreeToggle<CR>
 let NERDTreeWinSize = 35 
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$', '\.swp$', '\~$', '__pycache__']
@@ -50,7 +53,7 @@ syntax enable
 set background=light
 colorscheme solarized
 
-set colorcolumn=80
+set colorcolumn=100
 
 :set expandtab
 :set tabstop=4
@@ -65,16 +68,14 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_check_on_w = 0
+let g:syntastic_check_on_wq = 1
+let g:syntastic_python_checkers = ['flake8']
 " For Django projects
 "let g:syntastic_python_pylint_args = ['--load-plugins', 'pylint_django']
+let g:syntastic_python_flake8_args = ['--max-line-length', '100']
 
 let g:jedi#show_call_signatures = 3
 
 " For Python3 projects
 "let g:syntastic_python_python_exec = 'python3'
 "let g:jedi#force_py_version = 3
-
-highlight RedundantWhitespace ctermbg=red guibg=red
-match RedundantWhitespace /\s\+$\|\t/
