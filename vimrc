@@ -72,7 +72,7 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_python_checkers = ['flake8']
 " For Django projects
 "let g:syntastic_python_pylint_args = ['--load-plugins', 'pylint_django']
-let g:syntastic_python_flake8_args = ['--max-line-length', '100']
+let g:syntastic_python_flake8_args = ['--max-line-length', '100', '--max-complexity', '10', '--ignore=D100,D105']
 
 let g:jedi#show_call_signatures = 3
 

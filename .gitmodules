@@ -25,3 +25,12 @@
 [submodule "bundle/vim-python-pep8-indent"]
 	path = bundle/vim-python-pep8-indent
 	url = https://github.com/hynek/vim-python-pep8-indent
+[submodule "bundle/vim-coverage"]
+	path = bundle/vim-coverage
+	url = https://github.com/google/vim-coverage.git
+[submodule "bundle/vim-maktaba"]
+	path = bundle/vim-maktaba
+	url = https://github.com/google/vim-maktaba.git
+[submodule "bundle/vim-virtualenv"]
+	path = bundle/vim-virtualenv
+	url = https://github.com/jmcantrell/vim-virtualenv.git
