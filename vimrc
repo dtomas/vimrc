@@ -67,9 +67,10 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_qml_checkers = []
 " For Django projects
 "let g:syntastic_python_pylint_args = ['--load-plugins', 'pylint_django']
 let g:syntastic_python_flake8_args = ['--max-line-length', '100', '--max-complexity', '10', '--ignore=D100,D101,D105,D202,W503,D103,D102']
