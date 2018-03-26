@@ -53,11 +53,11 @@ syntax enable
 set background=light
 colorscheme solarized
 
-set colorcolumn=100
+"set colorcolumn=100
 
-:set expandtab
-:set tabstop=4
-:set shiftwidth=4
+":set expandtab
+":set tabstop=4
+":set shiftwidth=4
 
 au BufRead,BufNewFile *.qml set filetype=qml
 
