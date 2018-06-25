@@ -46,3 +46,6 @@
 [submodule "bundle/coveragepy.vim"]
 	path = bundle/coveragepy.vim
 	url = https://github.com/alfredodeza/coveragepy.vim
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
